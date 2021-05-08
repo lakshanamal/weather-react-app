@@ -1,13 +1,50 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin:0;
+  padding: 0;;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  font-family: 'montseratt',sans-serif;
+}
+
+.app{
+  background-image:url('./assets/cool.jpg') ;
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-in-out;
+}
+
+.app.warm{
+  background-image:url('./assets/warm.jpg') ;
+}
+
+main{
+  min-height: 100vh;
+  padding: 25px;
+}
+
+.search-box{
+  width: 100%;
+}
+
+.search-box .search-bar{
+  width: 100%;
+  padding: 15px;
+  border-radius: 0 0 15px 15px;
+  border:none;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.location-box {
+  padding-top: 50px;
+  /* width: 100%; */
+}
+
+.location-box .location{
+  color: white;
+  font-weight: 500; 
+  font-size: 32px;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50,50 ,70, 0.5);
 }
